@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Kursu na Elektronika</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #000;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        form {
+            padding: 20px;
+            border: none;
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formularz Kursu na Elektronika</h1>
+    <form>
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" placeholder="Wpisz swoje imię">
+        
+        <label for="surname">Nazwisko:</label>
+        <input type="text" id="surname" name="surname" placeholder="Wpisz swoje nazwisko">
+
+        <label>Jaką dziedziną elektroniki się interesujesz?</label>
+        <input type="checkbox" name="field" value="projektowanie"> Projektowanie układów elektronicznych<br>
+        <input type="checkbox" name="field" value="naprawa"> Naprawa i serwis sprzętu elektronicznego<br>
+        <input type="checkbox" name="field" value="programowanie"> Programowanie mikrokontrolerów<br>
+        <input type="checkbox" name="field" value="automatyka"> Automatyka i robotyka<br>
+        <input type="checkbox" name="field" value="inne"> Inne<br>
+        
+        <label>Czy masz już jakieś doświadczenie w pracy z elektroniką?</label>
+        <input type="radio" name="experience" value="hobby"> Tak, hobbystyczne<br>
+        <input type="radio" name="experience" value="zawodowe"> Tak, zawodowe<br>
+        <input type="radio" name="experience" value="brak"> Nie, dopiero zaczynam<br>
+        
+        <label>Jakie masz dostępne narzędzia do nauki elektroniki?</label>
+        <input type="checkbox" name="tools" value="multimetr"> Multimetr<br>
+        <input type="checkbox" name="tools" value="lutownica"> Lutownica<br>
+        <input type="checkbox" name="tools" value="oscyloskop"> Oscyloskop<br>
+        <input type="checkbox" name="tools" value="programator"> Programator mikrokontrolerów<br>
+        <input type="checkbox" name="tools" value="brak"> Żadne, potrzebuję wyposażenia od organizatora<br>
+
+        <label for="projects">Jakie projekty elektroniczne zrealizowałeś do tej pory?</label>
+        <textarea id="projects" name="projects" rows="4" placeholder="Opisz swoje dotychczasowe projekty..."></textarea>
+
+        <label>Twoje preferencje dotyczące uczestnictwa w kursie:</label>
+        <input type="radio" name="time" value="rano"> Poranne zajęcia (8:00 - 10:00)<br>
+        <input type="radio" name="time" value="poludnie"> Popołudniowe zajęcia (12:00 - 14:00)<br>
+        <input type="radio" name="time" value="wieczor"> Wieczorne zajęcia (16:00 - 18:00)<br>
+
+        <label>Jakie są twoje oczekiwania wobec kursu?</label>
+        <input type="checkbox" name="expectation" value="praktyczne"> Chcę zdobyć praktyczne umiejętności<br>
+        <input type="checkbox" name="expectation" value="teoria"> Chcę pogłębić wiedzę teoretyczną<br>
+        <input type="checkbox" name="expectation" value="praca"> Chcę przygotować się do pracy w branży<br>
+        <input type="checkbox" name="expectation" value="hobby"> Chcę rozwijać swoje projekty hobbystyczne<br>
+
+        <label for="plans">Jakie masz plany związane z elektroniką po ukończeniu kursu?</label>
+        <textarea id="plans" name="plans" rows="4" placeholder="Opisz swoje przyszłe plany..."></textarea>
+
+        <label for="reason">Dlaczego chcesz wziąć udział w kursie elektronika?</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="Podaj powód uczestnictwa..."></textarea>
+
+        <input type="submit" value="Wyślij formularz">
+    </form>
+</body>
+</html>
